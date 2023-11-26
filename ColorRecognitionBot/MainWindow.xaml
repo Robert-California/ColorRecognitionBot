@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorRecognitionBot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PixelBot" Height="450" Width="800" Background="#FF2C2C2C">
     <Grid>
+        <Button Name="ButtonSearchPixel" Click="OnButtonSearchPixelClick" Content="Search Pixel" HorizontalAlignment="Center"
+                Margin="0,50,0,0" VerticalAlignment="Center" Width="200" Height="30"></Button>
+        <TextBox Name="TextBoxHexColor" HorizontalAlignment="Center" Margin="0,0,0,50" TextWrapping="Wrap" Text="#ffffff"
+                 VerticalAlignment="Center" Width="200" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
 
     </Grid>
 </Window>
