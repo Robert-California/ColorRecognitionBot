@@ -9,11 +9,13 @@ namespace ColorRecognitionBot
 {
     public partial class MainWindow : Window
     {
+        // Each action has a virtual key key, source:
+        //https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
         private const UInt32 MOUSEEVENTF_LEFTDOWN = 0x0002;
         private const UInt32 MOUSEEVENTF_LEFTUP = 0x0004;
         private const UInt32 MOUSEEVENTF_RIGHTDOWN = 0x0008;
         private const UInt32 MOUSEEVENTF_RIGHTUP = 0x0010;
-        private const int VK_1 = 0x31; // Virtual key code for '1'
+        private const int VK_1 = 0x31; 
 
         [DllImport("user32.dll")]
         private static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint dwData, int dwExtraInfo);
